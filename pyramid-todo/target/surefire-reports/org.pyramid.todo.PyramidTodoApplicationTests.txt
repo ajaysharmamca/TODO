@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: org.pyramid.todo.PyramidTodoApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 10.61 s <<< FAILURE! - in org.pyramid.todo.PyramidTodoApplicationTests
+contextLoads(org.pyramid.todo.PyramidTodoApplicationTests)  Time elapsed: 0.015 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.pyramid.todo.controller.TodoController] from ClassLoader [sun.misc.Launcher$AppClassLoader@4aa298b7]
+Caused by: java.lang.NoClassDefFoundError: org/springframework/data/jpa/repository/JpaRepository
+Caused by: java.lang.ClassNotFoundException: org.springframework.data.jpa.repository.JpaRepository
+
